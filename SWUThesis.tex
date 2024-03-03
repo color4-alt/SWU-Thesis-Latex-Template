@@ -1,0 +1,71 @@
+%请使用XeLatex编译
+\documentclass[12pt,a4paper]{SWUThesis}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+
+\title{毕业论文题目}                           %标题 .cls文件78行修改字体大小
+\college{电子信息工程学院}                              %学院
+\major{电子信息工程}                                  %专业
+\grade{2019级}                                  %年级
+\authorid{0123456789}                      %学号
+\author{姓名}                                 %姓名
+\enname{Name}                             %姓名（英文）
+\advisor{导师}                                %导师
+\entitle{English Title}            %标题（英文）
+\abstract{这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要} %摘要
+
+\enabstract{This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract.This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract.This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract. This is abstract.}                           %摘要（英文）
+
+\keywords{关键词; 关键词; 关键词; 关键词}                               %关键词
+\enkeywords{keywords; keywords; keywords; keywords}                           %关键词（英文）
+\encollege{College of Electronic and Information Engineering}     %学院（英文）
+
+\begin{document}
+\maketitle
+\makecontents
+\makeabstract
+% 1.5倍行距
+\spacing{1.6}
+\section{前言}
+
+\subsection{概述}
+\par 这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述这是概述。
+
+
+\newpage
+
+\section{系统设计与实现}
+\subsection{系统设计}
+\subsubsection{系统开发流程设计}
+当开发一个软件系统时，需要遵循一个系统开发流程来确保软件质量和开发效率。一般来说，软件开发过程可以分为以下几个阶段：需求分析、系统设计、编码、测试、部署和维护。图\ref{fig:system_dev}是此次系统的系统开发流程图。
+\myfig{picture/system_dev_flow_chart.png}{4}{fig:system_dev}{系统开发流程图}{System development flow chart} %图片使用:{图片位置}{尺寸大小(英寸)}{标签}{中文题注}{英文题注}
+
+本次评估采用了四个指标来评估不同模型在睡眠分期分类方面的性能，分别是准确率（$ACC$）、宏平均F1分数（$MF1$）、Cohen Kappa（κ）\cite{cohen1960coefficient}和宏平均$G-mean$（MGm）。$MF1$和$MGm$都是评估模型在不平衡数据集上表现的常见指标。给定第i类的真正例（$TP_i$）、假正例（$FP_i$）、真反例（$TN_i$）和假反例（$FN_i$），则整体准确率$ACC$、$MF1$和$MGm$定义如下。
+\begin{equation}
+    ACC = \frac{\sum_{i=1}^{K}TP_i}{M}
+\end{equation}
+\begin{equation}
+    MF1 = \frac{1}{K}\sum_{i=1}^{K}\frac{2\times Precision_i \times Recall_i}{Precision_i + Recall_i}
+\end{equation}
+\begin{equation}
+    MGm = \frac{1}{k}\sum_{i=1}^{K}\sqrt{Specificity_i\times Recall_i}
+\end{equation}
+
+\newpage
+
+\section{结论}
+这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论这是结论
+
+
+
+
+\makereference
+
+\makeacknowledgement{
+这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢这是致谢
+}
+
+% \makeappendix
+\end{document}
